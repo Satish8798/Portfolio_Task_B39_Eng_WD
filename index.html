@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satish Ganesan - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="name">Satish Ganesan</h2>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#workAndProjects">Work/Projects</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="uil uil-multiply" onclick="closeMenu()"></i>
+                </ul>
+                <i class="uil uil-apps" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi...! <br> I am <span>Satish</span> Ganesan</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A lifetime learner, team player, hard worker with knowledge
+                        on full stack technologies such as HTML, CSS, Javascript and
+                        so on, who wants to always upgrade his skill set and use
+                        those skills in applications that make our lives easy.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="certifications">
+                        <ul>
+                            <li>
+                                <span>ESSENTIALS RPA PROFESSIONAL</span><br>
+                                Automation Anywhere
+                            </li>
+                            <li>
+                                <span>EMC Academic Associate, Data Science and Big Data Analytics</span> <br>
+                                    EMC
+                            </li>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>GITAM School of Technology</span>,Bengaluru, India<br>
+                                July 2020 <br>
+                                B.Tech, Computer Science and Engineering.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="uil uil-html5" style="color:orange"></i>
+                    <span>HTML5</span><br>
+                    <progress max="100" value="70"></progress> 70%
+                </div>
+                <div>
+                    <i class="uil uil-css3-simple" style="color:blue"></i>
+                    <span>CSS3</span><br>
+                    <progress max="100" value="60"></progress> 60%
+                </div>
+                <div>
+                    <i class="uil uil-java-script" style="color:yellow"></i>
+                    <span>Javascript</span><br>
+                    <progress max="100" value="70"></progress> 70%
+                </div>
+                <div>
+                    <i class="uil uil-brackets-curly" style="color:purple"></i>
+                    <span>Bootstrap</span><br>
+                    <progress max="100" value="50"></progress> 50%
+                </div>
+                <div>
+                    <i class="uil uil-database" style="color:brown"></i>
+                    <span>SQL Server(SSMS)</span><br>
+                    <progress max="100" value="50"></progress> 50%
+                </div>
+                <div>
+                    <i class="uil uil-brackets-curly" style="color:red"></i>
+                    <span>Basic C, Java</span><br>
+                    <progress max="100" value="50"></progress> 50%
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work/projects -->
+    <div id="workAndProjects">
+        <div class="container">
+            <h1 class="sub-title">My Work and Projects</h1>
+            <div class="wp-list">
+                <div class="wp">
+                    <img src="./images/realistic-make-up-brushes-composition_1284-25929.jpg" alt="">
+                    <div class="layer">
+                        <h3>Makeup API - Front End</h3>
+                        <p>This is a front end website which is created ussing
+                            a makeup API. In this webiste, you can search for different
+                            makeup products with their details using brand name or product type.
+                        </p>
+                        <a href=""><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cotact me -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-contact-1">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="uil uil-envelope"></i> ganesansatishm7@gmail.com</p>
+                    <p><i class="uil uil-mobile-android-alt"></i> 9535980270 (+91)</p>
+                    <div class="social-icons">
+                        <a href=""><i class="uil uil-github"></i></a>
+                        <a href=""><i class="uil uil-youtube"></i></a>
+                    </div>
+                    <a href="./MyNewResume.pdf" class="btn btn1" download>Resume</a>
+                </div>
+                <div class="col-contact-2">
+                    <form action="">
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" cols="30" rows="3" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169 Satish Ganesan..</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
