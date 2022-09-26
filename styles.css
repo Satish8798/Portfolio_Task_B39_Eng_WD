@@ -326,6 +326,23 @@ form .btn2{
     margin-top:20px;
 }
 
+.uil.uil-arrow-circle-up{
+    position:fixed;
+    right: 60px;
+    bottom:30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.uil.uil-arrow-circle-up:hover{
+    color:#e5ff00
+}
+
+body a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* responsiveness */
 
 nav .uil{
