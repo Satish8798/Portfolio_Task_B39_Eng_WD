@@ -160,6 +160,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
+#interests{
+    color: #e5ff00;
+}
+
 /* Skills */
 
 #skills{
@@ -342,6 +346,49 @@ body a{
     text-decoration: none;
     color: #fff;
 }
+
+/* experience */
+
+.exp-tab-links{
+    margin-right: 50px;
+    font-style: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.exp-tab-links::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: #e5ff00;
+    left:0;
+    bottom:-8px;
+    transition: 0.2s;
+    position: absolute;
+}
+
+.exp-tab-links.exp-active-link::after{
+    width:50%;
+}
+
+.exp-tab-contents ul li span{
+    color: #e5ff00  ;
+    font-size: 14px;
+}
+
+.exp-tab-contents ul li{
+    list-style: none
+}
+
+.exp-tab-contents{
+    display:none;
+}
+
+.exp-tab-contents.exp-active-tab{
+    display: block;
+}
+
 
 /* responsiveness */
 
