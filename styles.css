@@ -396,7 +396,7 @@ nav .uil{
     display: none;
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:900px){
     #header{
         background: url();
     }
@@ -456,6 +456,13 @@ nav .uil{
 
     .about-col-2{
         font-size: 14px;
+    }
+
+    .tab-titles{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 20px 0;
+        grid-gap: 20px;
     }
 
     .tab-links{
