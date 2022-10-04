@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #080808;
+    /* background: #080808; */
     color: #fff;
     background-image: url(./images/black-wall-texture-19.jpg);
     background-size: 100% 100vh;
@@ -431,7 +431,6 @@ nav .uil{
         width:200px;
         height:100vh;
         padding-top: 50px;
-        z-index:100;
     }
 
     nav ul li{
