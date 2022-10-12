@@ -33,6 +33,7 @@ nav{
     position:fixed;
     width:80%;
     background-color: #2626264b;
+    z-index:1;
 }
 
 .name{
@@ -208,6 +209,7 @@ nav ul li a:hover::after{
     border-radius:10px;
     position:relative;
     overflow: hidden;
+    z-index:0;
 }
 
 .wp img{
