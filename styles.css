@@ -176,7 +176,7 @@ nav ul li a:hover::after{
 
 #skills{
     padding: 30px 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .skills-list{
@@ -361,6 +361,7 @@ body a{
 /* experience */
 
 #experience{
+    padding: 50px 0;
     height: 100vh;
 }
 
