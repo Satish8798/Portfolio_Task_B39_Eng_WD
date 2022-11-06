@@ -41,3 +41,14 @@ function openTabExp(tabName){
     event.currentTarget.classList.add('exp-active-link');
     document.getElementById(tabName).classList.add('exp-active-tab')
 }
+
+document.querySelectorAll(`a[href^="#"]`).forEach(link=>{
+    link.addEventListener("click",(e)=>{
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href")).scrollIntoView({
+            behavior : "smooth",
+            block: "start"
+        })
+    })
+
+})
