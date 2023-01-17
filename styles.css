@@ -214,6 +214,7 @@ nav ul li a:hover::after{
     position:relative;
     overflow: hidden;
     z-index:0;
+    height: 400px;
 }
 
 .wp img{
@@ -360,6 +361,13 @@ body a{
 }
 
 /* experience */
+
+.wp-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+    margin: 50px 0;
+}
 
 #experience{
     padding: 50px 0;
