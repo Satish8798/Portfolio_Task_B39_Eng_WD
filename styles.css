@@ -119,7 +119,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
-    font-family:'Dancing Script', cursive;
+    font-family:'Poppins', sans-serif;
 }
 
 .tab-titles{
@@ -421,6 +421,9 @@ nav .uil{
     display: none;
 }
 
+progress{
+    accent-color: #e5ff00;
+}
 @media only screen and (max-width:900px){
 
     .header-text{
