@@ -206,8 +206,22 @@ nav ul li a:hover::after{
     grid-template-columns: 300px 300px 300px;
     gap: 40px;
     margin: 50px 0;
-
+    height: 60vh;
+    overflow-y: scroll;
 }
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #e5ff00;
+    border-radius: 10px;
+  }
 
 .wp{
     border-radius:10px;
@@ -508,6 +522,11 @@ progress{
 
     .copyright{
         font-size: 14px;
+    }
+
+    .skills-list{
+        height: 60vh;
+        overflow-y: scroll;
     }
 
 }
