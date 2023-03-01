@@ -87,6 +87,31 @@ nav ul li a:hover::after{
     color: #e5ff00;
 }
 
+.header-text p{
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+
+    border-right: solid 3px #e5ff00;
+
+    width:0 ;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: type 2s steps(20) 1s forwards,
+    blink 1s steps(1) 2s;
+}
+
+
+@keyframes type {
+    to{width: 21ch}
+}
+
+@keyframes blink {
+    from {border-color: transparent}
+    50% {border-color: #e5ff00;}
+    to {border-color: transparent}
+}
 
 /* about */
 
@@ -528,6 +553,16 @@ progress{
     .skills-list{
         height: 60vh;
         overflow-y: scroll;
+    }
+
+    .exp-tab-contents{
+        display:none;
+        font-size: 13px
+    }
+
+    .col-contact-1 p{
+        margin:30px;
+        font-size: 12px;
     }
 
 }
