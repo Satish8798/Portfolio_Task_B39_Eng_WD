@@ -93,7 +93,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .row{
@@ -212,6 +212,7 @@ nav ul li a:hover::after{
 
 ::-webkit-scrollbar{
     width: 5px;
+    height: 0
 }
 
 ::-webkit-scrollbar-track{
