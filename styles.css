@@ -219,6 +219,51 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
+.skills-listt{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.skill{
+    display: flex;
+    min-width: 140px;
+    color: black;
+    font-weight: 800;
+    padding: 8px;
+    margin-top: auto;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.skill div:nth-child(1){
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.skill div:nth-child(2){
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tools{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tool{
+    min-height: 40px;
+    min-width: 100px;
+    padding: 5px;
+    color:black;
+    font-weight: 500;
+}
+
 /* Work and projects */
 
 #workAndProjects{
@@ -269,13 +314,13 @@ nav ul li a:hover::after{
     transform: scale(1.1);
 }
 
-.layer h3{
+.layer h4{
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .layer{
-    width:100;
+    width:100%;
     height:0;
     background: linear-gradient(rgba(255, 254, 254, 0.6),#e5ff00c4);
     border-radius: 10px;
@@ -287,7 +332,7 @@ nav ul li a:hover::after{
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 20px;
     text-align: center;
     color:black;
     transition: height 0.5s;
@@ -297,8 +342,26 @@ nav ul li a:hover::after{
     height:100%;
 }
 
-.layer i{
+/* .layer i{
     font-size: 30px;
+} */
+
+.layer div a{
+    border: 1px solid black;
+    width: 30%;
+}
+
+.used{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    padding: 3px
+}
+
+.used span{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
 }
 
 /* Contact */
@@ -443,7 +506,7 @@ body a{
 }
 
 .exp-tab-contents ul li{
-    list-style: none
+    list-style-type: disc;
 }
 
 .exp-tab-contents{
