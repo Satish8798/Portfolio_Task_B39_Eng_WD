@@ -264,6 +264,12 @@
                     <div class="tool" style="background-color: rgb(233, 162, 31);">
                         Postman
                     </div>
+                    <div class="tool" style="background-color: rgb(31, 172, 233);">
+                        Netlify
+                    </div>
+                    <div class="tool" style="background-color: rgb(31, 233, 146);">
+                        Render
+                    </div>
                 </div>
             </div>
         </div>
@@ -350,20 +356,25 @@
                     </div>
                 </div>
                 
-                <!-- <div class="wp">
+                <div class="wp">
                     <img src="./images/realistic-make-up-brushes-composition_1284-25929.jpg" alt="">
                     <div class="layer">
-                        <h3>Makeup API - Front End</h3>
+                        <h4>Makeup API - Front End</h4>
+                        <em>Oct, 2022</em>
                         <p>This is a front end website which is created ussing
                             a makeup API. In this webiste, you can search for different
                             makeup products with their details using brand name or product type.
                         </p>
+                        <div class="used">
+                            <span>DOM</span><span>JavaScript</span><span>HTML</span>
+                            <span>CSS</span><span>BootStrap</span><span>Fetch API</span><span>Icons out</span>
+                        </div>
                         <div style="display:flex; justify-content: space-around; width: 100%">
-                            <a style="color:blue" href="https://vocal-peony-e8369b.netlify.app/" target="_blank"><i class="uil uil-link">LINK</i></a>
-                            <a  style="color:white" href="https://github.com/Satish8798/Webcode_B39_Eng_WD" target="_blank"><i class="uil uil-github">FE</i></a>
+                            <a style="color:red" href="https://vocal-peony-e8369b.netlify.app/" target="_blank"><i class="uil uil-link">Live</i></a>
+                            <a  style="color:black" href="https://github.com/Satish8798/Webcode_B39_Eng_WD" target="_blank"><i class="uil uil-github">FE</i></a>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -390,14 +401,14 @@
                                 of a column in multiple tables</strong> , test cases, unit testing, evidence report and data report.</li>
                             <li>got 5 out of 5 rating in anniversary review.</li>
                             <li>Project: Data Migration Project (Legacy Systems to Teamcenter-PLM application)
-                                <ul>
+                               <!--  <ul>
                                     <li>
                                         Role: SQL developer(Team member)
                                     </li>
                                     <li>
                                         Client: Kubota, Japan
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>Gained knowledge in stored procedures, Common Table
                                 Expressions, JOINs, Cursors etc.,</li>     
@@ -423,12 +434,13 @@
                     <a href="https://drive.google.com/file/d/19KJGR7ith8NROhefcrHXMOFzlveasnpo/view?usp=share_link" target="_blank" class="btn btn1">Resume</a>
                 </div>
                 <div class="col-contact-2">
-                    <!-- <form action="mailto:ganesansatishm7@gmail.com">
-                         <input type="text" name="name" placeholder="your name" required>
-                        <input type="email" name="email" placeholder="your email" required>
-                        <textarea name="message" cols="30" rows="3" placeholder="your message" style="resize:none"></textarea> 
-                        <button type="submit" class="btn btn2">Hire ME!</button>
+                    <!-- <form name="submit-to-google-sheet">
+                         <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" cols="30" rows="3" placeholder="your message" style="resize:none" required></textarea> 
+                        <button type="submit" class="btn btn2">Message me</button>
                     </form> -->
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -439,5 +451,24 @@
     <a href="#header"><i class="uil uil-arrow-circle-up"></i></a>
 
     <script src="./script.js"></script>
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxiGmkHQt0zi8CvzDIn8ngyHJiU_x2TPPfzOPE43LNlZxf4Bt0tOgazrDNBQwAB_q--/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          msg.innerHTML = 'sending....'
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!!";
+                setTimeout(()=>{
+                    msg.innerHTML=''
+                },3000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
 </body>
 </html>

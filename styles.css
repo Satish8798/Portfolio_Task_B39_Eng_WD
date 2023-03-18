@@ -355,13 +355,17 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     gap:5px;
-    padding: 3px
+    padding: 3px;
+    margin: 3px;
 }
 
 .used span{
     background-color: white;
     border-radius: 10px;
     padding: 2px;
+    font-size: 13px;
+    margin:2px;
+    font-weight: bold;
 }
 
 /* Contact */
@@ -435,6 +439,11 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
 }
 
 .copyright{
