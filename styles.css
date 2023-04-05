@@ -98,13 +98,13 @@ nav ul li a:hover::after{
     overflow: hidden;
     white-space: nowrap;
 
-    animation: type 2s steps(20) 1s forwards,
+    animation: type 2s steps(19) 1s forwards,
     blink 1s steps(1) 2s;
 }
 
 
 @keyframes type {
-    to{width: 21ch}
+    to{width: 20ch}
 }
 
 @keyframes blink {
